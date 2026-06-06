@@ -2,7 +2,7 @@ import { IRepository } from '@/types'
 import timeFromNow from '@/utils/time-from-now'
 import 'server-only'
 
-const username = process.env.GH_USERNAME || 'dedeard'
+const username = process.env.GH_USERNAME || 'mohammed-Araf'
 const apiKey = process.env.GH_API_KEY
 
 const repositoriesUrl = `https://api.github.com/users/${username}/repos?sort=updated&visibility=public&affiliation=owner`
@@ -18,6 +18,16 @@ const fetchOptions: RequestInit = {
 }
 
 const getProjects = async (): Promise<IRepository[]> => {
+  const descriptionFallback: Record<string, string> = {
+    'TS-Music-Bot': 'Feature-rich TeamSpeak music bot with queue management and playback controls (Kotlin, GPL v3).',
+    CoFarm: 'Privacy-first agritech platform using decentralised consensus and edge-based anomaly detection (TypeScript).',
+    'Agent-with-IBM-watsonx-Orchestrate': 'Autonomous agent prototype built at IBM Hackathon via watsonx Orchestrate (Python).',
+    'Career-connect': 'Job board platform connecting students with opportunities (TypeScript).',
+    Innoprint: 'Modern print-on-demand web application (TypeScript).',
+    'HACAKATHON-SPACE': 'Hackathon project workspace and collaboration tool.',
+    Cashtip: 'Real-time streamer tip and overlay platform integrated with StreamElements (Vue.js).',
+  }
+
   let repositories: any[] = []
 
   try {
@@ -28,7 +38,8 @@ const getProjects = async (): Promise<IRepository[]> => {
     return []
   }
 
-  repositories = repositories.filter((repo) => repo.description && repo.languages_url)
+  // Skip the profile README repo; show all others that have a language
+  repositories = repositories.filter((repo) => repo.languages_url && repo.language && repo.name !== username)
 
   const promises = repositories.map(async (repo) => {
     const [languagesRes, commitsRes] = await Promise.allSettled([
@@ -55,7 +66,7 @@ const getProjects = async (): Promise<IRepository[]> => {
       node_id: repo.node_id,
       name: repo.name,
       full_name: repo.full_name,
-      description: repo.description,
+      description: repo.description || descriptionFallback[repo.name] || repo.name,
       html_url: repo.html_url,
       stargazers_url: repo.stargazers_url,
       forks_url: repo.forks_url,

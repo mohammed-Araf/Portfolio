@@ -5,12 +5,10 @@ import BlogPostItem from './components/BlogPostItem'
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description:
-    'Articles by Dede Ariansya about full-stack web development, AI prompting, cloud architecture, and practical software engineering.',
+  description: 'Articles by Mohammed Araf about B.Tech Computer Science, full-stack web development, and custom hardware engineering.',
   openGraph: {
-    title: 'Blog by Dede Ariansya',
-    description:
-      'Articles by Dede Ariansya about full-stack web development, AI prompting, cloud architecture, and practical software engineering.',
+    title: 'Blog by Mohammed Araf',
+    description: 'Articles by Mohammed Araf about B.Tech Computer Science, full-stack web development, and custom hardware engineering.',
     url: '/blog',
   },
   alternates: {

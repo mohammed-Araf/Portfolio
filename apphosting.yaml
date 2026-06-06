@@ -1,0 +1,6 @@
+runConfig:
+  runtime: nodejs20
+
+env:
+  - variable: NODE_ENV
+    value: production

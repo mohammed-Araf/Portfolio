@@ -5,10 +5,10 @@ import ContactForm from './components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Contact Dede Ariansya for web development, software engineering, and collaboration opportunities.',
+  description: 'Contact Mohammed Araf for full-stack web development, custom hardware design, and collaboration opportunities.',
   openGraph: {
-    title: 'Contact Dede Ariansya',
-    description: 'Contact Dede Ariansya for web development, software engineering, and collaboration opportunities.',
+    title: 'Contact Mohammed Araf',
+    description: 'Contact Mohammed Araf for full-stack web development, custom hardware design, and collaboration opportunities.',
     url: '/contact',
   },
   alternates: {
@@ -23,35 +23,28 @@ export default function ContactPage() {
       <div className="flex flex-col lg:flex-row">
         <div className="mb-4 w-full text-center lg:w-[480px] lg:text-left">
           <div className="mb-8">
-            <h2 className="mb-3 text-lg font-bold">TEMPORARY ADDRESS</h2>
-            <p className="text-sm leading-5">
-              Bali, Indonesia. <br />
-              80361
-            </p>
+            <h2 className="mb-3 text-lg font-bold">LOCATION</h2>
+            <p className="text-sm leading-5">Bangalore, Karnataka, India.</p>
           </div>
           <div className="mb-8">
             <h2 className="mb-3 text-lg font-bold">EMAIL ADDRESS</h2>
             <p className="text-sm leading-5">
-              <a href="mailto:me@dedeard.my.id" rel="noopener" className="hover:text-yellow-600">
-                me@dedeard.my.id
-              </a>
-              <br />
-              <a href="mailto:dedeariansya1@gmail.com" rel="noopener" className="hover:text-yellow-600">
-                dedeariansya1@gmail.com
+              <a href="mailto:mdaraf26@gmail.com" rel="noopener" className="hover:text-yellow-600">
+                mdaraf26@gmail.com
               </a>
             </p>
           </div>
           <div className="mb-8">
-            <h2 className="mb-3 text-lg font-bold">MOBILE PHONE</h2>
+            <h2 className="mb-3 text-lg font-bold">SOCIAL CHANNELS</h2>
             <p className="text-sm leading-5">
-              <span>Call: </span>
-              <a href="tel:+6281343912883" target="_blank" rel="noopener" className="hover:text-yellow-600">
-                +62 813-4391-2883
+              <span>LinkedIn: </span>
+              <a href={SOCIALS.IN} target="_blank" rel="noopener" className="hover:text-yellow-600">
+                linkedin.com/in/mohammed-araf
               </a>
               <br />
-              <span>WhatsApp: </span>
-              <a href={SOCIALS.WA} target="_blank" rel="noopener" className="hover:text-yellow-600">
-                +62 813-4391-2883
+              <span>GitHub: </span>
+              <a href={SOCIALS.GH} target="_blank" rel="noopener" className="hover:text-yellow-600">
+                github.com/mohammed-Araf
               </a>
             </p>
           </div>

@@ -10,10 +10,10 @@ export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Guestbook',
-  description: 'Leave a short message for Dede Ariansya in the guestbook.',
+  description: 'Leave a short message for Mohammed Araf in the guestbook.',
   openGraph: {
-    title: 'Guestbook - Dede Ariansya',
-    description: 'Leave a short message for Dede Ariansya in the guestbook.',
+    title: 'Guestbook - Mohammed Araf',
+    description: 'Leave a short message for Mohammed Araf in the guestbook.',
     url: '/guestbook',
   },
   alternates: {

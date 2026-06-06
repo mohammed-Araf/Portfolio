@@ -1,4 +1,4 @@
-import dedeard from '@/assets/dedeard.jpg'
+import profilePic from '@/assets/mohammed_araf.png'
 import { RESUME_URL } from '@/constans/common'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -7,10 +7,12 @@ import PageTitle from '../components/PageTitle'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn more about Dede Ariansya, a pixel-perfect prompter and full-stack web developer based in Makassar, Indonesia.',
+  description:
+    'Learn more about Mohammed Araf, a B.Tech Computer Science student, full-stack developer, and hardware innovator based in Bangalore, India.',
   openGraph: {
-    title: 'About Dede Ariansya',
-    description: 'Learn more about Dede Ariansya, a pixel-perfect prompter and full-stack web developer based in Makassar, Indonesia.',
+    title: 'About Mohammed Araf',
+    description:
+      'Learn more about Mohammed Araf, a B.Tech Computer Science student, full-stack developer, and hardware innovator based in Bangalore, India.',
     url: '/about',
   },
   alternates: {
@@ -23,51 +25,153 @@ export default function AboutPage() {
     <>
       <PageTitle title="About" />
       <div className="md:flex">
-        <div className="mb-5 md:w-56">
-          <Image src={dedeard} alt="Dede Ariansya, also known as Dede Ard" className="block w-full" placeholder="blur" />
+        <div className="mb-5 md:w-64 flex-shrink-0">
+          <Image
+            src={profilePic}
+            alt="Mohammed Araf"
+            className="block w-full rounded-2xl shadow-lg border border-neutral-200 dark:border-neutral-800"
+            placeholder="blur"
+          />
         </div>
-        <div className="md:flex-1 md:pl-6">
-          <h2 className="mb-2 text-xl font-bold">I’m Dede Ariansya</h2>
-          <div className="mb-6">
-            <p className="mb-1">
-              I also go by Dede Ard. I’m a pixel-perfect prompter and full-stack web developer based in Makassar, Indonesia. <br />I build
-              polished interfaces, practical backends, and AI-assisted workflows while keeping code easy to read and understand.
+        <div className="md:flex-1 md:pl-8 text-neutral-800 dark:text-neutral-200">
+          <h2 className="mb-3 text-2xl font-bold tracking-tight text-black dark:text-white">I’m Mohammed Araf</h2>
+          <div className="mb-6 space-y-4 text-sm leading-6">
+            <p>
+              I am an adaptable and forward-thinking Engineering student pursuing a <strong>B.Tech in Computer Science & Technology</strong>{' '}
+              at <strong>Dayananda Sagar University, Bangalore</strong>. My multidisciplinary background spans full-stack web application
+              development, custom hardware design, and visual effects asset pipelines.
+            </p>
+            <p>
+              I love identifying market gaps and leveraging decentralized architectures, AI workflows, and Lean Startup methodologies to
+              transition complex concepts into functional, secure, and user-centric systems.
             </p>
           </div>
-          <h2 className="mb-2 text-xl font-bold">Saya Dede Ariansya</h2>
-          <div className="mb-6">
+
+          <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
+            Core Skills
+          </h3>
+          <div className="mb-6 text-sm leading-6">
             <p className="mb-1">
-              Pixel-perfect prompter dan full-stack web developer berbasis di Makassar, Indonesia.
-              <br />
-              Saya membangun interface yang rapi, backend yang praktis, dan workflow berbantuan AI sambil tetap menjaga kode mudah dibaca.
+              <strong>Programming Languages:</strong> Python, TypeScript, JavaScript, Java, C, C++, Kotlin, Lua
+            </p>
+            <p className="mb-1">
+              <strong>Web & Frameworks:</strong> Vue.js, React, Next.js, HTML5, CSS3, REST API & Webhooks, Full-Stack Dev
+            </p>
+            <p className="mb-1">
+              <strong>Hardware, IoT & Systems:</strong> Custom PC Architecture, Hardware Prototyping, Universal Filter Interface (UFI)
+              Design, PLA Casings
+            </p>
+            <p className="mb-1">
+              <strong>Tools & Methodologies:</strong> Git, GitHub, Version Control, Lean Startup, Agile, Mocha Pro, Edge AI
             </p>
           </div>
-          <h2 className="mb-2 text-xl font-bold">Skills from my GitHub work</h2>
-          <div className="mb-6">
-            <p className="mb-1">
-              Frontend: Next.js, React, TypeScript, Tailwind CSS, MDX, Vite, Alpine.js.
-              <br />
-              Backend: Node.js, NestJS, Express.js, Laravel, Firebase, MongoDB, MySQL.
-              <br />
-              Cloud & workflow: AWS Lambda, API Gateway, serverless HTTP, Docker, SEO metadata, AI prompting, and content systems.
+
+          <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
+            Patent & Innovation
+          </h3>
+          <div className="mb-6 text-sm leading-6 space-y-2">
+            <p>
+              <strong>Universal Filter Interface (UFI) for Modular Air Purification Systems</strong> (Published Patent Application)
+            </p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">
+              Invented a novel, modular mechanical interface capable of housing and adapting to multiple distinct filter classifications
+              (including HEPA and activated carbon filters) interchangeably without requiring structural modifications to the chassis.
             </p>
           </div>
-          <a
-            download
-            target="_blank"
-            rel="nofollow"
-            href={RESUME_URL}
-            className="mr-3 inline-block bg-white px-5 py-3 hover:bg-black hover:text-white dark:bg-black dark:hover:bg-white dark:hover:text-black"
-          >
-            Resume
-          </a>
-          <Link
-            href="/contact"
-            rel="nofollow"
-            className="inline-block bg-white px-5 py-3 hover:bg-black hover:text-white dark:bg-black dark:hover:bg-white dark:hover:text-black"
-          >
-            Contact me
-          </Link>
+
+          <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
+            Education
+          </h3>
+          <div className="mb-6 text-sm leading-6 space-y-3">
+            <div>
+              <div className="flex justify-between font-semibold text-black dark:text-white">
+                <span>B.Tech in Computer Science & Technology</span>
+                <span className="text-xs font-normal text-neutral-500">2024 – 2027</span>
+              </div>
+              <div className="text-xs text-neutral-600 dark:text-neutral-400 flex justify-between">
+                <span>Dayananda Sagar University, Bangalore</span>
+                <span>CGPA: 6.67 (Ongoing)</span>
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between font-semibold text-black dark:text-white">
+                <span>Diploma in Polytechnic CS</span>
+                <span className="text-xs font-normal text-neutral-500">2017 – 2021</span>
+              </div>
+              <div className="text-xs text-neutral-600 dark:text-neutral-400 flex justify-between">
+                <span>SVIT Polytechnic</span>
+                <span>Aggregate: 57.32%</span>
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between font-semibold text-black dark:text-white">
+                <span>Secondary Education (Class 1-10)</span>
+                <span className="text-xs font-normal text-neutral-500">2007 – 2017</span>
+              </div>
+              <div className="text-xs text-neutral-600 dark:text-neutral-400 flex justify-between">
+                <span>Lourde High School, Bangalore</span>
+                <span>Aggregate: 56.64%</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
+            Experience
+          </h3>
+          <div className="mb-6 text-sm leading-6 space-y-3">
+            <div>
+              <div className="flex justify-between font-semibold text-black dark:text-white">
+                <span>VFX Rotoscope Artist</span>
+                <span className="text-xs font-normal text-neutral-500">May 2022 – Nov 2022</span>
+              </div>
+              <div className="text-xs text-neutral-600 dark:text-neutral-400">Radiance VFX</div>
+              <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                Delivered production roto assets for major global releases including <em>The Flash</em> and{' '}
+                <em>Black Panther: Wakanda Forever</em> using Mocha Pro and advanced tracking tools, maintaining shot consistency under
+                tight studio deadlines.
+              </p>
+            </div>
+          </div>
+
+          <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
+            Certifications & Honors
+          </h3>
+          <div className="mb-6 text-sm leading-6 space-y-2">
+            <p className="mb-1">
+              <strong>Data Analytics with Python</strong> — NPTEL (Completed)
+            </p>
+            <p className="mb-1">
+              <strong>3rd Place Winner</strong> — Eurekathon, Dayananda Sagar University (CoFarm network)
+            </p>
+            <p className="mb-1">
+              <strong>Round 2 Qualifier (Ongoing)</strong> — Manthan Innovation Challenge 2026 (Compact Air Purification System)
+            </p>
+            <p className="mb-1">
+              <strong>Global Nominee</strong> — NASA International Space Apps Challenge
+            </p>
+            <p className="mb-1">
+              <strong>Participant</strong> — IBM Hackathon (watsonx Orchestrate autonomous agent prototype)
+            </p>
+          </div>
+
+          <div className="mt-8 flex gap-4">
+            <a
+              download
+              target="_blank"
+              rel="nofollow"
+              href={RESUME_URL}
+              className="inline-block bg-neutral-900 text-white dark:bg-white dark:text-black px-6 py-3 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors font-semibold text-sm"
+            >
+              Download Resume (PDF)
+            </a>
+            <Link
+              href="/contact"
+              rel="nofollow"
+              className="inline-block border border-neutral-300 dark:border-neutral-700 px-6 py-3 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors font-semibold text-sm"
+            >
+              Contact Me
+            </Link>
+          </div>
         </div>
       </div>
     </>

@@ -1,8 +1,8 @@
 {
   "name": "next-personal-web-app",
   "version": "0.1.0",
-  "repository": "https://github.com/dedeard/next-personal-web-app.git",
-  "author": "dede ariansya <me@dedeard.my.id>",
+  "repository": "https://github.com/mohammed-Araf/next-personal-web-app.git",
+  "author": "Mohammed Araf <mdaraf26@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {

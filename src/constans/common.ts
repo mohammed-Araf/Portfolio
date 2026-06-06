@@ -21,23 +21,21 @@ export const PAGE_TITLES = {
 }
 
 export const SOCIALS = {
-  GH: 'https://github.com/dedeard',
-  IG: 'https://www.instagram.com/dcode.js',
-  IN: 'https://www.linkedin.com/in/dedeard/',
-  WA: 'https://api.whatsapp.com/send?phone=6285343854343&text=%3CChatMe%20%2F%3E',
+  GH: 'https://github.com/mohammed-Araf',
+  IG: 'https://www.instagram.com/mohammed__araf/',
+  IN: 'https://linkedin.com/in/mohammed-araf',
+  WA: 'https://wa.me/916362558809',
 }
 
-export const RESUME_URL = 'https://drive.google.com/file/d/17EnrWbKObHNKFj4scsZM0R9JOX96uRJ3/view?usp=drive_link'
+export const RESUME_URL = '/resume.pdf'
 
-export const FORMSPREE_KEY = 'xoqyaqqe'
+export const FORMSPREE_KEY = 'xwvjlpkb'
 
 export const FIREBASE_CONFIG = {
-  apiKey: 'AIzaSyCVXW6MTdRVtYPTOoV92ruBQ3ZQcF5Ho0g',
-  authDomain: 'dede-ard.firebaseapp.com',
-  databaseURL: 'https://dede-ard.firebaseio.com',
-  projectId: 'dede-ard',
-  storageBucket: 'dede-ard.appspot.com',
-  messagingSenderId: '120930847292',
-  appId: '1:120930847292:web:eb77034f59e9ee37b65139',
-  measurementId: 'G-KJRFL3X06T',
+  apiKey: 'AIzaSyCuzHzY1nhvrxRj6PxzDrv4j6LZ9onQuGs',
+  authDomain: 'portfolio-55222.firebaseapp.com',
+  projectId: 'portfolio-55222',
+  storageBucket: 'portfolio-55222.firebasestorage.app',
+  messagingSenderId: '145176235675',
+  appId: '1:145176235675:web:d069d635acca77082c803e',
 }
