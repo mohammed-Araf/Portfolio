@@ -38,8 +38,8 @@ export default function AboutPage() {
           <div className="mb-6 space-y-4 text-sm leading-6">
             <p>
               I am an adaptable and forward-thinking Engineering student pursuing a <strong>B.Tech in Computer Science & Technology</strong>{' '}
-              at <strong>Dayananda Sagar University, Bangalore</strong>. My multidisciplinary background spans full-stack web application
-              development, custom hardware design, and visual effects asset pipelines.
+              at <strong>Dayananda Sagar University, Bangalore</strong>. Born in 2001 and based in Bengaluru, India, my multidisciplinary
+              background spans full-stack web application development, custom hardware design, and visual effects asset pipelines.
             </p>
             <p>
               I love identifying market gaps and leveraging decentralized architectures, AI workflows, and Lean Startup methodologies to
@@ -48,9 +48,9 @@ export default function AboutPage() {
           </div>
 
           <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
-            Core Skills
+            Core Skills & Engineering
           </h3>
-          <div className="mb-6 text-sm leading-6">
+          <div className="mb-6 text-sm leading-6 space-y-2">
             <p className="mb-1">
               <strong>Programming Languages:</strong> Python, TypeScript, JavaScript, Java, C, C++, Kotlin, Lua
             </p>
@@ -58,11 +58,47 @@ export default function AboutPage() {
               <strong>Web & Frameworks:</strong> Vue.js, React, Next.js, HTML5, CSS3, REST API & Webhooks, Full-Stack Dev
             </p>
             <p className="mb-1">
-              <strong>Hardware, IoT & Systems:</strong> Custom PC Architecture, Hardware Prototyping, Universal Filter Interface (UFI)
-              Design, PLA Casings
+              <strong>OS Development:</strong> Compiling &quot;Infinity X&quot;, a custom lightweight Android ROM (researching LineageOS and
+              RisingOS).
             </p>
             <p className="mb-1">
-              <strong>Tools & Methodologies:</strong> Git, GitHub, Version Control, Lean Startup, Agile, Mocha Pro, Edge AI
+              <strong>Machine Learning & Automation:</strong> Developing ML models for handwriting replication. Workflow automation via n8n
+              and agent development using pydantic_ai.
+            </p>
+            <p className="mb-1">
+              <strong>Networking & Simulations:</strong> NS2 execution utilizing TCL and AWK scripts. Built a Turing Machine simulation in
+              JFLAP.
+            </p>
+            <p className="mb-1">
+              <strong>Hardware & Systems:</strong> Custom PC Architecture, Hardware Prototyping, Universal Filter Interface (UFI) Design,
+              PLA Casings.
+            </p>
+          </div>
+
+          <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
+            Hardware & Workspace
+          </h3>
+          <div className="mb-6 text-sm leading-6 space-y-2">
+            <p className="mb-1">
+              <strong>Primary Workstation:</strong> Ryzen 7 5800X, 32GB RAM, RTX 3060Ti
+            </p>
+            <p className="mb-1">
+              <strong>Fabrication:</strong> Bambu Lab A1 3D Printer
+            </p>
+            <p className="mb-1">
+              <strong>Mobile Tech:</strong> Poco X5 Pro 5G, Redmi Note 7 Pro (with custom hardware speaker replacement), Pocophone F1
+            </p>
+          </div>
+
+          <h3 className="mb-2 text-lg font-bold text-black dark:text-white border-b border-neutral-200 dark:border-neutral-800 pb-1">
+            Personal Life & Gaming
+          </h3>
+          <div className="mb-6 text-sm leading-6 space-y-2">
+            <p className="mb-1">
+              <strong>Gaming:</strong> CS2, Apex Legends, SnowRunner, ETS2, Minecraft, Valorant, GTA V
+            </p>
+            <p className="mb-1">
+              <strong>Wheels & Timepieces:</strong> Riding a TVS Ronin and wearing a 25-year-old inherited Citizen automatic watch.
             </p>
           </div>
 
