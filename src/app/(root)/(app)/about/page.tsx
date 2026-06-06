@@ -62,8 +62,7 @@ export default function AboutPage() {
               RisingOS).
             </p>
             <p className="mb-1">
-              <strong>Machine Learning & Automation:</strong> Developing ML models for handwriting replication. Workflow automation via n8n
-              and agent development using pydantic_ai.
+              <strong>Machine Learning & Automation:</strong> Workflow automation via n8n and agent development using pydantic_ai.
             </p>
             <p className="mb-1">
               <strong>Networking & Simulations:</strong> NS2 execution utilizing TCL and AWK scripts. Built a Turing Machine simulation in
